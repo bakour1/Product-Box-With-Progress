@@ -1,0 +1,199 @@
+* {
+  text-transform: capitalize;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+:root {
+  --bg-green: #009688;
+  --bg-wrapper: #EEEEEE;
+  --bg-card: #F8F8F8;
+  --c-gry: #c3c3c3;
+  --c-black: #484848;
+  --c-p: #F8F8F8;
+
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background-color: var(--bg-wrapper);
+  width: 21rem;
+  min-height: 29.6875rem;
+  padding: 1.125rem;
+  padding-top: 1.375rem;
+}
+
+.wrapper .card {
+  background-color: var(--bg-card);
+  max-width: 100%;
+  max-height: 100%;
+  height: calc(100% + 1.375rem - 1.125rem);
+  overflow: hidden;
+  border-radius: .25rem;
+  -webkit-border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  -ms-border-radius: .25rem;
+  -o-border-radius: .25rem;
+}
+
+.wrapper .card .box-img {
+  width: 100%;
+  height: 11.875rem;
+  position: relative;
+}
+
+.wrapper .card .box-img::after {
+  content: '';
+  background-image: url(https://i.postimg.cc/65BbpJz6/images.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  width: 3.125rem;
+  height: 3.125rem;
+  position: absolute;
+  z-index: 9;
+  right: 1.25rem;
+  bottom: -1.25rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+
+.wrapper .card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .card .content {
+  flex: 1;
+  padding: .5rem .625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wrapper .card .content article {
+  width: 100%;
+  height: fit-content;
+}
+
+.wrapper .card .content article .title {
+  margin-bottom: 1.25rem;
+}
+
+.wrapper .card .content article .title h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--c-black);
+  margin-bottom: 1.25rem;
+  font-size: 1.375rem;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.wrapper .card .content article .title p {
+  font-family: inherit;
+  color: var(--c-gry);
+  text-transform: none;
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: -0.03125rem;
+}
+
+.wrapper .card .content article .title p span {
+  color: var(--bg-green);
+}
+
+.wrapper .card .content article .title p i {
+  margin-inline: .25rem;
+}
+
+.wrapper .card .content article>p {
+  font-size: .68rem;
+  line-height: 1.6;
+  color: var(--c-black);
+  text-transform: none;
+}
+
+.wrapper .card .content .prog {
+  flex: 1;
+}
+
+.wrapper .card .content .prog .location {
+  display: flex;
+  align-items: center;
+  font-size: .8rem;
+  margin-top: 1.25rem;
+  margin-bottom: .625rem;
+  color: var(--c-gry);
+}
+
+.wrapper .card .content .prog .location i {
+  margin-right: .3125rem;
+  color: var(--bg-green);
+}
+
+.wrapper .card .content .prog .rank {
+  background-color: var(--bg-wrapper);
+  width: 100%;
+  height: .75rem;
+  position: relative;
+}
+
+.wrapper .card .content .prog .rank span {
+  background-color: var(--bg-green);
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  border-radius: 0 .75rem .75rem 0;
+  -webkit-border-radius: 0 .75rem .75rem 0;
+  -moz-border-radius: 0 .75rem .75rem 0;
+  -ms-border-radius: 0 .75rem .75rem 0;
+  -o-border-radius: 0 .75rem .75rem 0;
+}
+
+.wrapper .card .content .prog .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  flex: 0;
+}
+
+.wrapper .card .content .info>div {
+  margin-top: 1rem;
+  font-size: .875rem;
+}
+
+.wrapper .card .content .info>div span {
+  font-weight: bold;
+}
+
+.wrapper .card .content .info>div p {
+  font-size: .75rem;
+  color: var(--c-gry);
+  margin-top: .375rem;
+  text-transform: none;
+}
